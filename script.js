@@ -38,9 +38,9 @@ function validate(nameValue, urlValue) {
 // Build Bookmarks DOM
 function buildBookmarks() {
     // Build Items
-    bookmarks.forEach((bookmark) => {
+    bookmarksContainer.textContent = '';   
         // Remove all bookmark elements
-        bookmarksContainer.textContent = '';
+        bookmarks.forEach((bookmark) => {
         const { name, url } = bookmark;
         // Item
         const item = document.createElement('div');
